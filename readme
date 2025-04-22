@@ -1,0 +1,102 @@
+Sistema de Conta Bancária Simples
+Descrição
+Este é um sistema simples de gerenciamento de conta bancária em PHP. O programa permite que o titular da conta realize as seguintes operações:
+
+Consultar o saldo atual.
+
+Sacar um valor da conta (com verificação de saldo insuficiente).
+
+Depositar um valor na conta (com verificação de valores inválidos para depósito).
+
+Sair do sistema.
+
+O sistema funciona em loop até que o usuário opte por sair, permitindo que ele execute múltiplas operações.
+
+Funcionalidades
+Consultar Saldo Atual: O titular pode verificar o saldo disponível na conta.
+
+Sacar Valor: O titular pode sacar uma quantia da conta. Se o valor solicitado for maior que o saldo disponível, o sistema avisa sobre saldo insuficiente.
+
+Depositar Valor: O titular pode realizar depósitos. O sistema verifica se o valor a ser depositado é positivo.
+
+Sair: O usuário pode sair do sistema.
+
+Como usar
+O programa inicia com um saldo de R$1000,00.
+
+O usuário é apresentado com um menu contendo quatro opções:
+
+1: Consultar Saldo Atual
+
+2: Sacar Valor
+
+3: Depositar Valor
+
+4: Sair
+
+O usuário pode digitar o número correspondente à opção desejada. O sistema executa a função correspondente e retorna ao menu principal até que o usuário escolha a opção de sair.
+
+Exemplo de Execução:
+
+*******************
+Titular: Mateus Afonso
+Saldo atual: 1000
+*******************
+1. Consultar Saldo atual
+2. Sacar valor
+3. Depositar valor
+4. Sair
+Qual função deseja executar: 1
+Seu saldo atual é de 1000 
+
+*******************
+Titular: Mateus Afonso
+Saldo atual: 1000
+*******************
+1. Consultar Saldo atual
+2. Sacar valor
+3. Depositar valor
+4. Sair
+Qual função deseja executar: 2
+Quanto deseja sacar: 500
+Você sacou 500 
+
+*******************
+Titular: Mateus Afonso
+Saldo atual: 500
+*******************
+1. Consultar Saldo atual
+2. Sacar valor
+3. Depositar valor
+4. Sair
+Qual função deseja executar: 4
+Saindo...
+Detalhes do Código
+Variáveis Iniciais:
+
+$nome_titular: Define o nome do titular da conta.
+
+$Saldo_atual: Define o saldo inicial da conta (R$1000).
+
+$digitar: Variável usada para capturar a escolha do usuário.
+
+Estrutura de Repetição (while):
+
+O loop while executa enquanto o valor digitado pelo usuário for diferente de 4 (opção de sair).
+
+Opções de Menu:
+
+O menu de opções é exibido dentro do loop e o programa aguarda a entrada do usuário para determinar qual operação será executada.
+
+Operações:
+
+Consultar Saldo: Exibe o saldo atual.
+
+Sacar Valor: Solicita o valor a ser retirado e verifica se o saldo é suficiente.
+
+Depositar Valor: Solicita o valor a ser depositado e verifica se é válido.
+
+Considerações
+O programa assume que o usuário digita entradas válidas (exceto para o depósito, que deve ser um valor positivo).
+
+O código pode ser aprimorado para lidar com exceções de entradas não numéricas e outros tipos de validações.
